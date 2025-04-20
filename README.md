@@ -2,7 +2,7 @@
 
 # MIT Risk Repository Framework Crosswalk
 A web portal for mapping AI governance frameworks to the MIT Risk Repository
-![MIT Risk Repository Framework Crosswalk](https://via.placeholder.com/800x400?text=MIT+Risk+Repository+Framework+Crosswalk)
+![MIT Risk Repository Framework Crosswalk](https://himjoe.github.io/mit-risk-crosswalk/)
 
 ## Overview
 
@@ -114,7 +114,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments
 
-- MIT Technology Review for the Risk Repository categorization
+- MIT Future Tech Lab
 - The Center for Cybersecurity Policy and Law for their crosswalk methodology
 - All the organizations that have developed and published AI governance frameworks
 
