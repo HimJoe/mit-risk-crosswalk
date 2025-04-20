@@ -120,4 +120,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contact
 
 For questions, suggestions, or collaboration opportunities, please contact:
-- Email:  himanshujoshi.ind@gmail.com
+- Email:  himanshujoshi@utexas.edu
+  
