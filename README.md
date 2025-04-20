@@ -2,7 +2,6 @@
 
 # MIT Risk Repository Framework Crosswalk
 A web portal for mapping AI governance frameworks to the MIT Risk Repository
-![MIT Risk Repository Framework Crosswalk](https://himjoe.github.io/mit-risk-crosswalk/)
 
 ## Overview
 
@@ -121,4 +120,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contact
 
 For questions, suggestions, or collaboration opportunities, please contact:
-- Email: contact@example.com
+- Email:  himanshujoshi.ind@gmail.com
