@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIT AI Risk Repository Framework Crosswalk</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="#"><i class="fas fa-shield-alt"></i> MIT AI Risk Framework Crosswalk</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#overview">Overview</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#risk-categories">Risk Categories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#frameworks">Frameworks</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#heatmap">Coverage Heatmap</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#recommendations">Recommendations</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<div class="hero">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <h1>MIT AI Risk Repository Framework Crosswalk</h1>
+                <p class="lead">A comprehensive analysis of how various AI governance frameworks map to the MIT Risk Repository</p>
+                <a href="#risk-categories" class="btn btn-light btn-lg mt-3">Explore Risk Categories</a>
+            </div>
+            <div class="col-lg-4 text-center">
+                <div style="width:100%; height:220px; background:#1e3a4a; border-radius:8px; display:flex; align-items:center; justify-content:center; color:white;">
+                    <div>
+                        <i class="fas fa-project-diagram fa-4x mb-3"></i>
+                        <h4>Framework Mapping</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Main Content -->
+<div class="container mt-4">
+    
+    <!-- Overview Section -->
+    <section id="overview" class="mb-5">
+        <div class="card">
+            <div class="card-header">
+                <h2 class="mb-0">Overview</h2>
+            </div>
+            <div class="card-body">
+                <p>As artificial intelligence continues to transform industries and societies, managing AI-related risks has become a critical priority for organizations worldwide. The MIT Risk Repository represents a comprehensive collection of AI risks across multiple domains, including general AI risks, technical vulnerabilities, governance challenges, operational considerations, and compliance requirements.</p>
+                
+                <p>This interactive portal allows you to explore how various AI governance frameworks map to the MIT Risk Repository, examining their complementary strengths, identifying potential gaps, and providing recommendations for organizations looking to establish robust AI risk management practices.</p>
+                
+                <div class="row mt-4">
+                    <div class="col-md-3 text-center">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <i class="fas fa-exclamation-triangle fa-3x mb-3 text-warning"></i>
+                                <h5>5 Risk Categories</h5>
+                                <p class="text-muted">General, Technical, Governance, Operational, Compliance</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <i class="fas fa-shield-alt fa-3x mb-3 text-primary"></i>
+                                <h5>16 Frameworks</h5>
+                                <p class="text-muted">International standards, industry-specific and corporate approaches</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <i class="fas fa-project-diagram fa-3x mb-3 text-success"></i>
+                                <h5>40 Risk Items</h5>
+                                <p class="text-muted">Detailed analysis of specific AI risks</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <i class="fas fa-tasks fa-3x mb-3 text-danger"></i>
+                                <h5>Coverage Analysis</h5>
+                                <p class="text-muted">Mapping strength assessment across frameworks</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Framework Comparison Chart -->
+                <div class="mt-5">
+                    <h4>Framework Comparison</h4>
+                    <p>Select frameworks to compare their coverage across risk categories:</p>
+                    
+                    <div class="mb-3">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input framework-checkbox" type="checkbox" id="nistCheck" value="nist" data-name="NIST AI RMF" checked>
+                            <label class="form-check-label" for="nistCheck">NIST AI RMF</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input framework-checkbox" type="checkbox" id="euCheck" value="eu" data-name="EU AI Act">
+                            <label class="form-check-label" for="euCheck">EU AI Act</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input framework-checkbox" type="checkbox" id="isoCheck" value="iso" data-name="ISO/IEC 42001">
+                            <label class="form-check-label" for="isoCheck">ISO/IEC 42001</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input framework-checkbox" type="checkbox" id="singaporeCheck" value="singapore" data-name="Singapore AI Verify">
+                            <label class="form-check-label" for="singaporeCheck">Singapore AI Verify</label>
+                        </div>
+                    </div>
+                    
+                    <div class="chart-container">
+                        <canvas id="comparisonChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Risk Categories Section -->
+    <section id="risk-categories" class="mb-5">
+        <div class="card">
+            <div class="card-header">
+                <h2 class="mb-0">MIT Risk Categories</h2>
+            </div>
+            <div class="card-body">
+                <div class="mb-3">
+                    <label for="riskCategoryFilter" class="form-label">Filter by category:</label>
+                    <select class="form-select" id="riskCategoryFilter">
+                        <option value="all">All Categories</option>
+                        <option value="general">General AI Risks</option>
+                        <option value="technical">Technical AI Risks</option>
+                        <option value="governance">Governance Risks</option>
+                        <option value="operational">Operational Risks</option>
+                        <option value="compliance">Compliance Risks</option>
+                    </select>
+                </div>
+                
+                <ul class="nav nav-tabs" id="riskTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="general-tab" data-bs-toggle="tab" data-bs-target="#general" type="button" role="tab" aria-selected="true">General AI Risks</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="technical-tab" data-bs-toggle="tab" data-bs-target="#technical" type="button" role="tab" aria-selected="false">Technical AI Risks</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="governance-tab" data-bs-toggle="tab" data-bs-target="#governance" type="button" role="tab" aria-selected="false">Governance Risks</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="operational-tab" data-bs-toggle="tab" data-bs-target="#operational" type="button" role="tab" aria-selected="false">Operational Risks</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="compliance-tab" data-bs-toggle="tab" data-bs-target="#compliance" type="button" role="tab" aria-selected="false">Compliance Risks</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="riskTabContent">
+                    <!-- General AI Risks Tab -->
+                    <div class="tab-pane fade show active" id="general" role="tabpanel" aria-labelledby="general-tab">
+                        <h3>General AI Risks</h3>
+                        <p>Fundamental risks related to AI fairness, explainability, harm, and oversight.</p>
+                        
+                        <div class="accordion" id="generalRisksAccordion">
+                            <!-- GEN-01 -->
+                            <div class="accordion-item mb-3">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#gen01Collapse">
+                                        <strong>GEN-01:</strong> AI Bias and Fairness
+                                    </button>
+                                </h2>
+                                <div id="gen01Collapse" class="accordion-collapse collapse show" data-bs-parent="#generalRisksAccordion">
+                                    <div class="accordion-body">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <h5>Risk Description</h5>
+                                                <p>Risk of AI systems exhibiting bias or producing unfair outcomes for different demographic groups.</p>
+                                                
+                                                <h5>NIST Mapping</h5>
+                                                <p><strong>Category:</strong> ID.RA, PR.IP</p>
+                                                <p><strong>Subcategory:</strong> ID.RA-4, PR.IP-2</p>
+                                                <p><strong>Coverage:</strong> Partial</p>
+                                                
+                                                <h5>Red Team Findings</h5>
+                                                <p>Current mappings to PR.IP are insufficient; lacks specific controls for detecting and mitigating bias</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <h5>Framework Coverage</h5>
+                                                <div class="framework-badges">
+                                                    <span class="framework-badge nist">NIST AI RMF: AI.MAP-2 <i class="fas fa-check-circle"></i></span>
+                                                    <span class="framework-badge singapore">Singapore AI Verify <i class="fas fa-check-circle"></i></span>
+                                                    <span class="framework-badge msft">Microsoft Responsible AI <i class="fas fa-check-circle"></i></span>
+                                                    <span class="framework-badge eu">EU AI Act <i class="fas fa-check-circle"></i></span>
+                                                    <span class="framework-badge iso">ISO/IEC 42001 <i class="fas fa-minus-circle"></i></span>
+                                                </div>
+                                                
+                                                <h5>Recommendations</h5>
+                                                <p>Add explicit mapping to AI.MAP-2 (Impact Assessment) and AI.MSR-1 (Testing & Evaluation) for comprehensive bias testing</p>
+                                                
+                                                <h5>Priority</h5>
+                                                <span class="badge bg-danger">High</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- GEN-02 -->
+                            <div class="accordion-item mb-3">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#gen02Collapse">
+                                        <strong>GEN-02:</strong> Model Explainability
+                                    </button>
+                                </h2>
+                                <div id="gen02Collapse" class="accordion-collapse collapse" data-bs-parent="#generalRisksAccordion">
+                                    <div class="accordion-body">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <h5>Risk Description</h5>
+                                                <p>Inability to explain or interpret AI decision-making processes, reducing trust and accountability.</p>
+                                                
+                                                <h5>NIST Mapping</h5>
+                                                <p><strong>Category:</strong> ID.RA</p>
+                                                <p><strong>Subcategory:</strong> ID.RA-5</p>
+                                                <p><strong>Coverage:</strong> Limited</p>
+                                                
+                                                <h5>Red Team Findings</h5>
+                                                <p>No clear mapping to NIST controls requiring documentation of model decisions</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <h5>Framework Coverage</h5>
+                                                <div class="framework-badges">
+                                                    <span class="framework-badge nist">NIST AI RMF: AI.MSR-2 <i class="fas fa-check-circle"></i></span>
+                                                    <span class="framework-badge ibm">IBM AI Ethics <i class="fas fa-check-circle"></i></span>
+                                                    <span class="framework-badge singapore">Singapore AI Verify <i class="fas fa-check-circle"></i></span>
+                                                    <span class="framework-badge eu">EU AI Act <i class="fas fa-check-circle"></i></span>
+                                                </div>
+                                                
+                                                <h5>Recommendations</h5>
+                                                <p>Implement AI.MSR-2 (Documentation) controls and establish explainability requirements for high-risk models</p>
+                                                
+                                                <h5>Priority</h5>
+                                                <span class="badge bg-danger">High</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- GEN-06 -->
+                            <div class="accordion-item mb-3">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#gen06Collapse">
+                                        <strong>GEN-06:</strong> Model Hallucination
+                                    </button>
+                                </h2>
+                                <div id="gen06Collapse" class="accordion-collapse collapse" data-bs-parent="#generalRisksAccordion">
+                                    <div class="accordion-body">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <h5>Risk Description</h5>
+                                                <p>AI systems generating plausible but factually incorrect information presented as factual.</p>
+                                                
+                                                <h5>NIST Mapping</h5>
+                                                <p><strong>Category:</strong> None</p>
+                                                <p><strong>Subcategory:</strong> None</p>
+                                                <p><strong>Coverage:</strong> None</p>
+                                                
+                                                <h5>Red Team Findings</h5>
+                                                <p>No controls addressing AI hallucination and factual accuracy</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <h5>Framework Coverage</h5>
+                                                <div class="framework-badges">
+                                                    <span class="framework-badge nist">NIST AI RMF: AI.MAP-3 <i class="fas fa-minus-circle"></i></span>
+                                                    <span class="framework-badge eu">EU AI Act <i class="fas fa-minus-circle"></i></span>
+                                                    <span class="framework-badge iso">ISO/IEC 42001 <i class="fas fa-times-circle"></i></span>
+                                                    <span class="framework-badge singapore">Singapore AI Verify <i class="fas fa-minus-circle"></i></span>
+                                                    <span class="framework-badge msft">Microsoft Responsible AI <i class="fas fa-minus-circle"></i></span>
+                                                </div>
+                                                
+                                                <h5>Recommendations</h5>
+                                                <p>Add AI.MSR-1 (Testing & Evaluation) controls specific to hallucination detection and AI.MAP-3 for documenting system limitations</p>
+                                                
+                                                <h5>Priority</h5>
+                                                <span class="badge bg-danger">High</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Technical AI Risks Tab -->
+                    <div class="tab-pane fade" id="technical" role="tabpanel" aria-labelledby="technical-tab">
+                        <h3>Technical AI Risks</h3>
+                        <p>Risks related to AI security vulnerabilities, adversarial attacks, and model integrity.</p>
+                        
+                        <div class="accordion" id="technicalRisksAccordion">
+                            <!-- TECH-01 -->
+                            <div class="accordion-item mb-3">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#tech01Collapse">
+                                        <strong>TECH-01:</strong> Adversarial Attacks
+                                    </button>
+                                </h2>
+                                <div id="tech01Collapse" class="accordion-collapse collapse show" data-bs-parent="#technicalRisksAccordion">
+                                    <div class="accordion-body">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <h5>Risk Description</h5>
+                                                <p>Vulnerability to inputs specifically designed to cause AI systems to malfunction or produce incorrect outputs.</p>
+                                                
+                                                <h5>NIST Mapping</h5>
+                                                <p><strong>Category:</strong> PR.DS</p>
+                                                <p><strong>Subcategory:</strong> PR.DS-6</p>
+                                                <p><strong>Coverage:</strong> Partial</p>
+                                                
+                                                <h5>Red Team Findings</h5>
+                                                <p>Current integrity checks insufficient for sophisticated attacks</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <h5>Framework Coverage</h5>
+                                                <div class="framework-badges">
+                                                    <span class="framework-badge nist">NIST AI RMF: AI.MSR-1 <i class="fas fa-check-circle"></i></span>
+                                                    <span class="framework-badge ibm">IBM AI Ethics <i class="fas fa-check-circle"></i></span>
+                                                    <span class="framework-badge iso">ISO/IEC 42001 <i class="fas fa-minus-circle"></i></span>
+                                                    <span class="framework-badge msft">Microsoft Responsible AI <i class="fas fa-check-circle"></i></span>
+                                                </div>
+                                                
+                                                <h5>Recommendations</h5>
+                                                <p>Implement adversarial testing framework (AI.MSR-1) and robust model validation</p>
+                                                
+                                                <h5>Priority</h5>
+                                                <span class="badge bg-danger">High</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- TECH-03 -->
+                            <div class="accordion-item mb-3">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tech03Collapse">
+                                        <strong>TECH-03:</strong> Prompt Injection
+                                    </button>
+                                </h2>
+                                <div id="tech03Collapse" class="accordion-collapse collapse" data-bs-parent="#technicalRisksAccordion">
+                                    <div class="accordion-body">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <h5>Risk Description</h5>
+                                                <p>Vulnerability where carefully crafted inputs can override AI system instructions or extract sensitive information.</p>
+                                                
+                                                <h5>NIST Mapping</h5>
+                                                <p><strong>Category:</strong> None</p>
+                                                <p><strong>Subcategory:</strong> None</p>
+                                                <p><strong>Coverage:</strong> None</p>
+                                                
+                                                <h5>Red Team Findings</h5>
+                                                <p>No clear NIST controls mapped for this emerging threat vector</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <h5>Framework Coverage</h5>
+                                                <div class="framework-badges">
+                                                    <span class="framework-badge nist">NIST AI RMF <i class="fas fa-times-circle"></i></span>
+                                                    <span class="framework-badge msft">Microsoft (partial) <i class="fas fa-minus-circle"></i></span>
+                                                    <span class="framework-badge ibm">IBM AI Ethics <i class="fas fa-times-circle"></i></span>
+                                                    <span class="framework-badge iso">ISO/IEC 42001 <i class="fas fa-times-circle"></i></span>
+                                                </div>
+                                                
+                                                <h5>Recommendations</h5>
+                                                <p>Create new controls under PR.DS for input validation and prompt security</p>
+                                                
+                                                <h5>Priority</h5>
+                                                <span class="badge bg-danger">High</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Other Tabs -->
+                    <div class="tab-pane fade" id="governance" role="tabpanel" aria-labelledby="governance-tab">
+                        <h3>AI Governance Risks</h3>
+                        <p>Risks related to AI governance structures, accountability, and organizational management.</p>
+                        <div class="alert alert-info">
+                            <i class="fas fa-info-circle"></i> The full analysis includes detailed mappings for all governance risks.
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane fade" id="operational" role="tabpanel" aria-labelledby="operational-tab">
+                        <h3>Operational Risks</h3>
+                        <p>Risks related to the operational aspects of deploying and maintaining AI systems.</p>
+                        <div class="alert alert-info">
+                            <i class="fas fa-info-circle"></i> The full analysis includes detailed mappings for all operational risks.
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane fade" id="compliance" role="tabpanel" aria-labelledby="compliance-tab">
+                        <h3>Compliance and Regulatory Risks</h3>
+                        <p>Risks related to meeting regulatory requirements and compliance obligations for AI systems.</p>
+                        <div class="alert alert-info">
+                            <i class="fas fa-info-circle"></i> The full analysis includes detailed mappings for all compliance risks.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Frameworks Section -->
+    <section id="frameworks" class="mb-5">
+        <div class="card">
+            <div class="card-header">
+                <h2 class="mb-0">AI Governance Frameworks</h2>
+            </div>
+            <div class="card-body">
+                <div class="row mb-4">
+                    <div class="col-md-12">
+                        <input type="text" id="frameworkSearch" class="form-control" placeholder="Search frameworks...">
+                    </div>
+                </div>
+                
+                <div class="row" id="frameworkCards">
+                    <!-- NIST AI RMF -->
+                    <div class="col-md-4 mb-4 framework-card-container" data-framework="nist">
+                        <div class="card h-100 framework-card">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <h5 class="mb-0">NIST AI RMF</h5>
+                                <span class="badge bg-primary">2023</span>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"><strong>Organization:</strong> National Institute of Standards and Technology (US)</p>
+                                <p class="card-text"><strong>Focus:</strong> Comprehensive AI risk management</p>
+                                <p class="card-text"><strong>Key Components:</strong> Govern, Map, Measure, Manage</p>
+                                <p class="card-text"><strong>Mapping Value:</strong> Already demonstrated compatibility with MIT repository</p>
+                                <a href="https://www.nist.gov/itl/ai-risk-management-framework" target="_blank" class="btn btn-outline-primary mt-2">
+                                    <i class="fas fa-external-link-alt"></i> Visit Framework
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- EU AI Act -->
+                    <div class="col-md-4 mb-4 framework-card-container" data-framework="eu">
+                        <div class="card h-100 framework-card">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <h5 class="mb-0">EU AI Act</h5>
+                                <span class="badge bg-primary">2023</span>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"><strong>Organization:</strong> European Union</p>
+                                <p class="card-text"><strong>Focus:</strong> Risk-based regulatory approach</p>
+                                <p class="card-text"><strong>Key Components:</strong> Risk categorization (unacceptable, high, limited, minimal)</p>
+                                <p class="card-text"><strong>Mapping Value:</strong> Clear compliance requirements</p>
+                                <a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" target="_blank" class="btn btn-outline-primary mt-2">
+                                    <i class="fas fa-external-link-alt"></i> Visit Framework
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ISO/IEC 42001 -->
+                    <div class="col-md-4 mb-4 framework-card-container" data-framework="iso">
+                        <div class="card h-100 framework-card">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                                <h5 class="mb-0">ISO/IEC 42001</h5>
+                                <span class="badge bg-primary">2023</span>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"><strong>Organization:</strong> International Organization for Standardization</p>
+                                <p class="card-text"><strong>Focus:</strong> Management system standard for AI</p>
+                                <p class="card-text"><strong>Key Components:</strong> Leadership, planning, support, operation, performance evaluation</p>
+                                <p class="card-text"><strong>Mapping Value:</strong> Provides formal certification pathway</p>
+                                <a href="https://www.iso.org/standard/81230.html" target="_blank" class="btn btn-outline-primary mt-2">
+                                    <i class="fas fa-external-link-alt"></i> Visit Framework
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-3">
+                    <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#frameworkCompareModal">
+                        <i class="fas fa-table"></i> Compare Frameworks
+                    </button>
+                </div>
+                
+                <!-- Framework Comparison Modal -->
+                <div class="modal fade" id="frameworkCompareModal" tabindex="-1" aria-labelledby="frameworkCompareModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5
