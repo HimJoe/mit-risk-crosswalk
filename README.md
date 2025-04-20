@@ -1,7 +1,7 @@
 
 # MIT Risk Repository Framework Crosswalk
 A web portal for mapping AI governance frameworks to the MIT Risk Repository
-![AI Risks and AI Governance](./(https://github.com/HimJoe/mit-risk-crosswalk/blob/main/MIT%20AI%20RR%20-%20Cross%20walk%20-%20visual%20selection.png)
+![AI Risks and AI Governance](./https://github.com/HimJoe/mit-risk-crosswalk/blob/main/MIT%20AI%20RR%20-%20Cross%20walk%20-%20visual%20selection.png)
 ## Overview
 
 This portal provides a comprehensive analysis of how various AI governance frameworks map to the MIT Risk Repository. By examining their complementary strengths, identifying potential gaps, and providing recommendations, organizations can establish more robust AI risk management practices.
