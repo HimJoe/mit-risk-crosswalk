@@ -1,0 +1,286 @@
+/* MIT Risk Repository Framework Crosswalk Portal
+   Main Stylesheet */
+
+:root {
+    --primary: #264653;
+    --secondary: #2a9d8f;
+    --tertiary: #e9c46a;
+    --quaternary: #f4a261;
+    --quinary: #e76f51;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation */
+.navbar {
+    background-color: var(--primary);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: white !important;
+}
+
+.nav-link {
+    color: rgba(255, 255, 255, 0.85) !important;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: white !important;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    padding: 4rem 0;
+    margin-bottom: 2rem;
+}
+
+.hero h1 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.hero .lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+/* Cards */
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header {
+    background-color: var(--primary);
+    color: white;
+    font-weight: bold;
+    border-bottom: none;
+}
+
+.framework-card .card-header {
+    background-color: var(--secondary);
+}
+
+/* Risk Categories */
+.risk-category {
+    cursor: pointer;
+    border-left: 4px solid var(--tertiary);
+    background-color: #f8f9fa;
+    margin-bottom: 0.5rem;
+    transition: all 0.3s;
+}
+
+.risk-category:hover {
+    background-color: #e9ecef;
+}
+
+.risk-item {
+    border-left: 4px solid var(--quaternary);
+    background-color: #fff;
+    margin: 0.3rem 0;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+/* Framework Coverage */
+.framework-coverage {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.coverage-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.high-coverage {
+    background-color: #28a745;
+}
+
+.medium-coverage {
+    background-color: #ffc107;
+}
+
+.low-coverage {
+    background-color: #dc3545;
+}
+
+.no-coverage {
+    background-color: #6c757d;
+}
+
+/* Framework Badges */
+.framework-badge {
+    background-color: var(--secondary);
+    color: white;
+    padding: 0.3rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    margin-right: 0.3rem;
+    margin-bottom: 0.3rem;
+    display: inline-block;
+}
+
+.framework-badge.nist {
+    background-color: #3498db;
+}
+
+.framework-badge.iso {
+    background-color: #9b59b6;
+}
+
+.framework-badge.eu {
+    background-color: #f1c40f;
+    color: #333;
+}
+
+.framework-badge.singapore {
+    background-color: #e74c3c;
+}
+
+.framework-badge.msft {
+    background-color: #27ae60;
+}
+
+.framework-badge.ibm {
+    background-color: #34495e;
+}
+
+/* Tabs */
+.nav-tabs {
+    border-bottom: none;
+}
+
+.nav-tabs .nav-link {
+    color: var(--primary) !important;
+    border: none;
+    border-radius: 0;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+}
+
+.nav-tabs .nav-link.active {
+    color: white !important;
+    background-color: var(--primary);
+    border: none;
+}
+
+.tab-content {
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Heatmap */
+.heatmap-cell {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+
+.coverage-level-0 {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.coverage-level-1 {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.coverage-level-2 {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.coverage-level-3 {
+    background-color: #28a745;
+    color: white;
+}
+
+/* Accordions */
+.accordion-button:not(.collapsed) {
+    background-color: var(--secondary);
+    color: white;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0, 0, 0, 0.125);
+}
+
+/* Charts & Visualizations */
+.chart-container {
+    position: relative;
+    height: 300px;
+    margin-bottom: 2rem;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--primary);
+    color: white;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+.footer a {
+    color: rgba(255, 255, 255, 0.7);
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767.98px) {
+    .hero {
+        padding: 2rem 0;
+    }
+    
+    .card-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .heatmap-cell {
+        width: 30px;
+        height: 30px;
+        font-size: 0.8rem;
+    }
+}
+
+/* Custom Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-inst
